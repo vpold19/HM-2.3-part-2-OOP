@@ -22,9 +22,8 @@ public abstract class WheelsTransport implements Check{
     public void setWheelsCount(int wheelsCount) {
         this.wheelsCount = wheelsCount;
     }
-    public void updateTyre() {
-        System.out.println("Меняем покрышку");
-    }
+    public abstract void updateTyre();
+
 
    public void check(){
            System.out.println("Обслуживаем " + getModelName());
